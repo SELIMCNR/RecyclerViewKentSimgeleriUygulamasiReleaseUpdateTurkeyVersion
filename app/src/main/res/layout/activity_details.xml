@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="8dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/nameText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginBottom="1dp"
+        android:text="Name"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/countryText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/countryText"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginEnd="67dp"
+        android:text="Country"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/detailsText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameText" />
+
+    <TextView
+        android:id="@+id/detailsText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Manyas Kuş Cenneti, Türkiye'nin kuzeybatısında, Balıkesir il sınırları içinde yer alan önemli bir sulak alan ve kuş gözlem bölgesidir. Türkiye'nin en eski ve en büyük kuş cennetlerinden biridir. Adını Manyas Gölü'nden almaktadır. Manyas Gölü, kuşların göç yolları üzerinde yer aldığı için özellikle göç mevsimlerinde birçok farklı kuş türüne ev sahipliği yapar.  Manyas Kuş Cenneti, 1959 yılında &quot;Manyas Kuş Gözlemevi ve Milli Parkı&quot; olarak koruma altına alınmıştır. Daha sonra &quot;Manyas Kuş Cenneti&quot; olarak adlandırılmıştır. Alan, Ramsar Sözleşmesi kapsamında koruma altına alınmış sulak alanlardan biridir.  Göl ve çevresindeki sulak alanlar, flamingo, bataklık kırlangıcı, kaşıkgaga, angıt, bahri, elmabaş patka gibi birçok su kuşu türüne ev sahipliği yapmaktadır. Özellikle bahar ve sonbahar dönemlerinde, göç eden kuşların uğrak noktası olarak bilinir. Kuş gözlemevi, ziyaretçilere göl ve çevresindeki kuşları gözlemleme imkanı sunar.  Manyas Kuş Cenneti, hem doğa severler hem de kuş gözlemcileri için önemli bir destinasyondur. Bu alan, biyolojik çeşitliliğin korunması ve kuşların doğal yaşam alanlarının sürdürülebilir şekilde korunması amacıyla çalışmalar yürüten bir koruma alanıdır."
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/countryText" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:onClick="back"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.996"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
